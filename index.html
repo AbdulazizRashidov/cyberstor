@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Store</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="menuNav" class="p-4">
+      <button class="mark btn" onclick="closeMenuNav()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <header class="mb-4 mt-3">
+      <div class="container1">
+        <div class="flex_box1">
+          <div class="">
+            <img class="logo img-fluid" src="./logo.png" alt="" />
+          </div>
+          <div class="header_list">
+            <button class="headerBtn btn" onclick="openMenu()">
+              Categories
+              <i class="fa-regular fa-circle-down"></i>
+            </button>
+            <div class="input_list d-none d-xl-flex">
+              <input
+                class="input"
+                placeholder="Write here to find a product"
+                type="text"
+              />
+              <button class="headerBtn btn">
+                <i id="search" class="fa-brands fa-searchengin"></i>
+              </button>
+            </div>
+          </div>
+          <div class="d-flex d-none gap-5 d-xl-flex">
+            <div class="basket_list gap-2">
+              <a href="" class="basketBtn">
+                <img class="basket_img" src="./basket.png" alt="" />
+              </a>
+            </div>
+            <div class="login">
+              <button class="headerBtn Btn btn">Signup</button>
+              <button class="headerBtn btn">Login</button>
+            </div>
+          </div>
+          <button
+            id="menuBtn"
+            class="menuBtn d-xl-none btn"
+            onclick="openMenuNav()"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container1">
+        <div class="flex_box">
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper col-12 col-md-6 col-xl-4">
+              <div class="swiper-slide">
+                <img class="list1 img-fluid" src="./list.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="list1 img-fluid" src="./list.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div id="menu" class="p-4 hide">
+      <div class="text-end">
+        <button class="mark btn" onclick="closeMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul>
+        <li>
+          <i class="fa-solid fa-gamepad"></i>
+          <a href="">Gaming Assemblies</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-laptop"></i>
+          <a href="">laptops</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-hard-drive"></i>
+          <a href="">Drives</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-keyboard"></i>
+          <a href="">Keyboards</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-computer-mouse"></i>
+          <a href="">Mice</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-headphones"></i>
+          <a href="">Headphones</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-microphone"></i>
+          <a href="">Microphones</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-rug"></i>
+          <a href="">Rugs</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-usb"></i>
+          <a href="">Accessories</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-keyboard"></i>
+          <i class="fa-solid fa-computer-mouse"></i>
+          <a href="">The sets</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-desktop"></i>
+          <a href="">Monitors</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-memory"></i>
+          <a href="">RAM</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-speaker-deck"></i>
+          <a href="">Speakers</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-camera"></i>
+          <a href="">Web-cams</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-playstation"></i>
+          <a href="">Game consoles</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-gamepad"></i>
+          <a href="">Game controllers</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-glasses"></i>
+          <a href="">Glasses for gamers</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-wifi"></i>
+          <a href="">WiFi Routers</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-fan"></i>
+          <a href="">Cooler</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-computer"></i>
+          <a href="">Corps</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-chair"></i>
+          <a href="">Armchairs</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-table"></i>
+          <a href="">Tables for gamers</a>
+        </li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="container1">
+        <div class="d-flex align-items-center gap-3 mt-5 mb-5">
+          <img class="category_img" src="./skitka.png" alt="" />
+          <h1 class="category_h1">Discounted Products</h1>
+          <a class="link_show" href="">show all</a>
+        </div>
+        <div class="row justify-content-center jurtify-content-md-between">
+          <div class="col-8 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+            <div class="card align-items-center">
+              <img
+                class="product_img"
+                src="./Discounted Products/MSI_NB.png"
+                alt=""
+              />
+              <h3 class="product_h3">MSI NB GE75 N18</h3>
+              <div class="d-flex">
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+              </div>
+              <p class="product_p">1640</p>
+              <h2 class="product_price">1440$</h2>
+              <button class="cart">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="col-8 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+            <div class="card align-items-center">
+              <img
+                class="product_img"
+                src="./Discounted Products/MSI_NB.png"
+                alt=""
+              />
+              <h3 class="product_h3">MSI NB GE75 N18</h3>
+              <div class="d-flex">
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+              </div>
+              <p class="product_p">1640</p>
+              <h2 class="product_price">1440$</h2>
+              <button class="cart">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="col-8 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+            <div class="card align-items-center">
+              <img
+                class="product_img"
+                src="./Discounted Products/MSI_NB.png"
+                alt=""
+              />
+              <h3 class="product_h3">MSI NB GE75 N18</h3>
+              <div class="d-flex">
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+              </div>
+              <p class="product_p">1640</p>
+              <h2 class="product_price">1440$</h2>
+              <button class="cart">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="col-8 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+            <div class="card align-items-center">
+              <img
+                class="product_img"
+                src="./Discounted Products/MSI_NB.png"
+                alt=""
+              />
+              <h3 class="product_h3">MSI NB GE75 N18</h3>
+              <div class="d-flex">
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+              </div>
+              <p class="product_p">1640</p>
+              <h2 class="product_price">1440$</h2>
+              <button class="cart">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="col-8 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+            <div class="card align-items-center">
+              <img
+                class="product_img"
+                src="./Discounted Products/MSI_NB.png"
+                alt=""
+              />
+              <h3 class="product_h3">MSI NB GE75 N18</h3>
+              <div class="d-flex">
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+              </div>
+              <p class="product_p">1640</p>
+              <h2 class="product_price">1440$</h2>
+              <button class="cart">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="col-8 col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+            <div class="card align-items-center">
+              <img
+                class="product_img"
+                src="./Discounted Products/MSI_NB.png"
+                alt=""
+              />
+              <h3 class="product_h3">MSI NB GE75 N18</h3>
+              <div class="d-flex">
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+                <img class="img_star" src="./star_price1.png" alt="" />
+              </div>
+              <p class="product_p">1640</p>
+              <h2 class="product_price">1440$</h2>
+              <button class="cart">Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 mt-5 mb-5">
+          <img class="category_img" src="./new.png" alt="" />
+          <h1 class="category_h1">Novelties</h1>
+          <a class="link_show" href="">show all</a>
+        </div>
+        <div class="row">
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 mt-5 mb-5">
+          <img class="category_img" src="./star.png" alt="" />
+          <h1 class="category_h1">Best deals</h1>
+          <a class="link_show" href="">show all</a>
+        </div>
+        <div class="flex_box">
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+
+          <div class="card align-items-center">
+            <img
+              class="product_img"
+              src="./Discounted Products/MSI_NB.png"
+              alt=""
+            />
+            <h3 class="product_h3">MSI NB GE75 N18</h3>
+            <div class="d-flex">
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+              <img class="img_star" src="./star_price1.png" alt="" />
+            </div>
+            <p class="product_p">1640</p>
+            <h2 class="product_price">1440$</h2>
+            <button class="cart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container1">
+        <div class="flex_box">
+          <div>
+            <h1 class="category_h1">INFO</h1>
+            <nav>
+              <ul>
+                <li>
+                  <a href="" class="product_h3 text-decoration-none"
+                    >About company</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="product_h3">Contact Information</a>
+                </li>
+                <li>
+                  <a href="" class="product_h3">Our stores</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/513b2e20a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
